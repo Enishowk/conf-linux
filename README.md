@@ -18,3 +18,9 @@ sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/
 sudo apt-get update
 sudo apt-get install arc-theme
 ```
+
+## Icon Elementary
+http://danrabbit.deviantart.com/art/elementary-Icons-65437279
+```
+cp -r /dossier/elementary /usr/share/icons/
+```
