@@ -24,3 +24,10 @@ http://danrabbit.deviantart.com/art/elementary-Icons-65437279
 ```
 cp -r /dossier/elementary /usr/share/icons/
 ```
+
+
+# MEMO
+Shutdown
+```
+command : xfce4-session-logout --halt
+```
