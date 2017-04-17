@@ -6,17 +6,23 @@ apt-get install xfce4
 ```
 
 ## Install Arc theme
-Debian
+https://github.com/horst3180/arc-theme
+Install Unity tweak tool
 ```
-echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/Debian_8.0/ /' >> /etc/apt/sources.list.d/arc-theme.list 
-apt-get update
-apt-get install arc-theme
-```
-Ubuntu 15.10
-```
-sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_15.10/ /' >> /etc/apt/sources.list.d/arc-theme.list"
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_16.04/ /' > /etc/apt/sources.list.d/arc-theme.list"
 sudo apt-get update
 sudo apt-get install arc-theme
+```
+Comment outline-style in /usr/share/themes/Arc-Dark/gtk-3.0/gtk.css
+
+## Icon Arc theme
+```
+sudo apt-get install autotools-dev
+sudo apt-get install autoconf
+git clone https://github.com/horst3180/arc-icon-theme --depth 1 && cd arc-icon-theme
+./autogen.sh --prefix=/usr
+sudo make install
+cp -R Arc /usr/share/icons
 ```
 
 ## Icon Elementary
